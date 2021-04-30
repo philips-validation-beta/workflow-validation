@@ -3,8 +3,6 @@ name: failing-workflow
 on: 
   workflow_dispatch:
   
-
-
 jobs:
   failingjob:
    runs-on: ubuntu-latest
