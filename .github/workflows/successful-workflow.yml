@@ -1,12 +1,10 @@
-name: failing-workflow
+name: succesful-workflow
 
 on: 
   workflow_dispatch:
   
 jobs:
-  failingjob:
-   runs-on: ubuntu-latest
-   steps:
-   - id: date
-     run: |
-       ./.github/workflows/successful-workflow.yml
+  cat-existing:
+    uses: ./.github/workflows/reusable-workflow.yml 
+    with:
+      filename: ./README.md
