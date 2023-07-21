@@ -7,9 +7,7 @@ jobs:
   succesfuljob:
    runs-on: ubuntu-latest
    steps:
-   - name: Checkout
-     uses: actions/checkout@v3 
-   - id: call
+   - name: cat-readme
      uses: ./.github/workflows/reusable-workflow.yml 
      with:
       filename: ./README.md
