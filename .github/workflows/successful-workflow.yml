@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
   
 jobs:
-  cat-existing:
-    uses: ./.github/workflows/reusable-workflow.yml 
-    with:
-      filename: ./README.md
+  name: cat-existing:
+  steps:
+
+    - name: Checkout repo
+      uses: actions/checkout@v3
+    - name: 
+      uses: ./.github/workflows/reusable-workflow.yml 
+      with:
+        filename: ./README.md
