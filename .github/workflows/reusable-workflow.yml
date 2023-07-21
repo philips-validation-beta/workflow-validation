@@ -3,18 +3,17 @@ name: Reusable workflow example
 on:
   workflow_call:
     inputs:
-      config-path:
+      label:
         required: true
         type: string
-    secrets:
-      token:
-        required: true
+
 
 jobs:
-  triage:
+  printlabel:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v4
+    - id: print
+      run: | 
+         echo label
       with:
-        repo-token: ${{ secrets.token }}
-        configuration-path: ${{ inputs.config-path }}
+        label: ${{ inputs.label }}
