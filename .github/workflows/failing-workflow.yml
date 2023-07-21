@@ -7,4 +7,4 @@ jobs:
   cat-non-existing:
     uses: ./.github/workflows/reusable-workflow.yml 
     with:
-      fiename: reusable-workflow-test
+      filename: non-existing-file
