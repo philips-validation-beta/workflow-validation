@@ -9,8 +9,8 @@ Workflow is trigger on commit (push) and on Pull request to meet :
 **Test Specifications**: GH_TC_32   
 **Triggered by**: https://github.com/philips-internal/github-validation-tests/blob/master/.github/workflows/trigger-actions-tests.yml    
 **Required Setup**: 
-- 2 Branches: ``master`` / _test-pull-request_ 
-    - Mergeable Pull Request: to pull test-pull-request into master   
+- 2 Branches: ``master`` / ``test-pull-request`` 
+    - Mergeable Pull Request: to pull ``test-pull-request`` into ``master``   
 
 ## failing.yml / reusable-workflow.yml
 
@@ -19,5 +19,5 @@ The workflow is triggered manually (on: workflow_dispatch) to meet:
 **Test Specifications**: GH_TC_31   
 **Triggered by**: https://github.com/philips-internal/github-validation-tests/blob/master/cypress/e2e/tests/GHTC-31.cy.js   
 **Required Setup**: 
-- file non-existing-file should **NOT** exist in repository
-- Failing.yml calls the reusable workflow _reusable_workflow_ 
+- file ``non-existing-file`` should **NOT** exist in repository
+- workflow ``failing.yml`` calls the reusable ``workflow _reusable_workflow`.yml``
