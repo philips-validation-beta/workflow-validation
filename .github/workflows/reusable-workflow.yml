@@ -3,7 +3,7 @@ name: Reusable workflow example
 on:
   workflow_call:
     inputs:
-      label:
+      filename:
         required: true
         type: string
 
@@ -14,4 +14,4 @@ jobs:
     steps:
     - id: print
       run: | 
-         echo ${{ inputs.label }}
+         cat ${{ inputs.label }}
