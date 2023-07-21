@@ -20,4 +20,4 @@ The workflow is triggered manually (on: workflow_dispatch) to meet:
 **Triggered by**: https://github.com/philips-internal/github-validation-tests/blob/master/cypress/e2e/tests/GHTC-31.cy.js   
 **Required Setup**: 
 - file ``non-existing-file`` should **NOT** exist in repository
-- workflow ``failing.yml`` calls the reusable ``workflow _reusable_workflow`.yml``
+- workflow ``failing.yml`` calls the reusable ``workflow _reusable_workflow.yml``
