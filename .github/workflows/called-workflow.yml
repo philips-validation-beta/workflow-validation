@@ -1,3 +1,5 @@
+name: Reusable workflow example
+
 on:
   workflow_call:
     inputs:
@@ -5,15 +7,14 @@ on:
         required: true
         type: string
     secrets:
-      envPAT:
+      token:
         required: true
-        
+
 jobs:
-  reusable_workflow_job:
+  triage:
     runs-on: ubuntu-latest
-    environment: production
     steps:
     - uses: actions/labeler@v4
       with:
-        repo-token: ${{ secrets.envPAT }}
+        repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
