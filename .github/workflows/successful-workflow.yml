@@ -1,15 +1,15 @@
-name: succesful-workflow
+name: scuccessful-workflow
 
 on: 
   workflow_dispatch:
   
 jobs:
-  name: cat-existing:
-  steps:
-
-    - name: Checkout repo
-      uses: actions/checkout@v3
-    - name: 
-      uses: ./.github/workflows/reusable-workflow.yml 
-      with:
-        filename: ./README.md
+  succesfuljob:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Checkout
+     uses: actions/checkout@v3 
+   - id: call
+     uses: ./.github/workflows/reusable-workflow.yml 
+     with:
+      filename: ./README.md
