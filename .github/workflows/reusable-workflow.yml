@@ -9,9 +9,9 @@ on:
 
 
 jobs:
-  printlabel:
+  cat-file:
     runs-on: ubuntu-latest
     steps:
     - id: print
       run: | 
-         cat ${{ inputs.label }}
+         cat ${{ inputs.filename }}
