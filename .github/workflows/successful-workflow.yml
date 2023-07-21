@@ -1,13 +1,10 @@
-name: scuccessful-workflow
+name: succesful-workflow
 
 on: 
   workflow_dispatch:
   
 jobs:
-  succesfuljob:
-   runs-on: ubuntu-latest
-   steps:
-   - name: cat-readme
-     uses: ./.github/workflows/reusable-workflow.yml 
-     with:
+  cat-existing:
+    uses: ./.github/workflows/reusable-workflow.yml 
+    with:
       filename: ./README.md
