@@ -12,6 +12,8 @@ jobs:
   cat-file:
     runs-on: ubuntu-latest
     steps:
-    - id: print
+    - name: Checkout
+      uses: actions/checkout@v3 
+    - id: catfile
       run: | 
          cat ${{ inputs.filename }}
