@@ -10,7 +10,7 @@ Workflow is trigger on commit (push) and on Pull request to meet :
 **Triggered by**: https://github.com/philips-internal/github-validation-tests/blob/master/.github/workflows/trigger-actions-tests.yml    
 **Required Setup**: 
 - 2 branches: ``master`` / ``test-pull-request``
-- mergeable Pull Request: to pull ``test-pull-request`` into ``master``   
+- a mergeable Pull Request: to pull ``test-pull-request`` into ``master``   
 
 ## failing.yml / reusable-workflow.yml
 
