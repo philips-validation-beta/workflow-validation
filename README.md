@@ -24,5 +24,5 @@ The workflow is triggered manually (on: workflow_dispatch) to meet:
 - file ``non-existing-file`` should **NOT** exist in repository
 - workflow ``failing.yml`` calls the reusable ``workflow _reusable_workflow.yml``
 
- ![Alt text](./workflows.svg)
+ ![Alt text]
 <img src="./workflows.svg">
