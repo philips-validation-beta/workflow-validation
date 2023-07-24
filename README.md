@@ -23,11 +23,9 @@ The workflow is triggered manually (on: workflow_dispatch) to meet:
 **Required Setup**: 
 - file ``non-existing-file`` should **NOT** exist in repository
 - workflow ``failing.yml`` calls the reusable ``workflow _reusable_workflow.yml``
-
-----------------
+ 
 |  failing-workflow.yml   |
 -------------------
-
-------------------------
+ 
 | sucessful-workflow.yml   |
 -----------------------
