@@ -4,7 +4,19 @@ on:
   workflow_dispatch:
   
 jobs:
-  cat-existing:
-    uses: ./.github/workflows/reusable-workflow.yml 
-    with:
-      filename: ./README.md
+  succesfuljob:
+   runs-on: ubuntu-latest
+   steps:
+        
+   - name: Checkout   
+     uses: actions/checkout@v3.2.0
+        
+   - id: date
+     run: |
+       tar cvf ValidationArtifact.tgz README.md 
+
+   - name: upload artifact
+     uses: actions/upload-artifact@v3
+     with:
+          name: ValidationArtifact
+          path: ValidationArtifact.tgz
