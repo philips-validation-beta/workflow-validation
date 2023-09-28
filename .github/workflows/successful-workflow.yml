@@ -1,10 +1,10 @@
-name: succesful-workflow
+name: successful-workflow
 
 on: 
   workflow_dispatch:
   
 jobs:
-  succesfuljob:
+  successfuljob:
    runs-on: ubuntu-latest
    steps:
         
