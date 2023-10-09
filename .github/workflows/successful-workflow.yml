@@ -11,10 +11,6 @@ jobs:
    - name: Checkout   
      uses: actions/checkout@v3.2.0
 
-   - uses: ./.github/workflows/reusable-workflow.yml 
-     with:
-       filename: README.md
-      
    - id: date
      run: |
        tar cvf ValidationArtifact.tgz README.md 
