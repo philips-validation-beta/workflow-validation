@@ -16,7 +16,7 @@ jobs:
        tar cvzf ValidationArtifact.tgz README.md 
 
    - name: upload artifact
-     uses: actions/upload-artifact@v3
+     uses: actions/upload-artifact@v4
      with:
           name: ValidationArtifact
           path: ValidationArtifact.tgz
